@@ -1,0 +1,11 @@
+{
+  "clientId": "gQHHySZnIjKRsmWWnmCwxBqB",
+  "secret": "4WH9T7cP+9H+4Z9_suqdYBrWHXTYd3TbQoAwl_45ax6c2,Have1ih26,r5EEuhotMc-7dut8yh5K4S+wAvUdAb-M0d4Xw-B15-SWgPDIvoYTG_ixhDRNxNxADtF4oTE1",
+  "token": "AstraCS:gQHHySZnIjKRsmWWnmCwxBqB:86be37e1c309b627a27a10ef10176722180c5e31b1ac63d5c17ec7a86792c92e",
+  "orgId": "a778ee0c-dc61-48c8-adaa-7e2abc69f371",
+  "roles": [
+    "1faa93f2-b889-4190-9585-4bc6e3c3595a"
+  ],
+  "generatedOn": "2024-01-31T15:32:41.189352156Z",
+  "__typename": "GenerateToken"
+}
