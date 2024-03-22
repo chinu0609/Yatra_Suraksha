@@ -1,4 +1,4 @@
 import Model
 
-a = Model.query_engine.query("How i drive a car?")
+a = Model.querry_accident("How do I drive a car?")
 print(a)

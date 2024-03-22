@@ -22,7 +22,7 @@ cloud_config= {
 }
 
 
-with open("lavanyasatpute123@gmail.com-token.json") as f:
+with open("Lavanya_Databse_Token.json") as f:
     secrets = json.load(f)
 
 CLIENT_ID = secrets["clientId"]
@@ -62,5 +62,8 @@ print(f"Loaded {len(documents)} document(s).")
 
 index = VectorStoreIndex.from_documents(documents,
                                         service_context=service_context)
-query_engine = index.as_query_engine()
+def querry_accident(querry):
+    query_engine = index.as_query_engine()
+    response = query_engine.query(querry)
+    return response
 
