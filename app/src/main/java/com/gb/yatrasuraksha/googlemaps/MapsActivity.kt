@@ -5,7 +5,6 @@ import android.content.Context
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.view.WindowManager
 import com.gb.yatrasuraksha.R
 
@@ -24,6 +23,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityMapsBinding
+    private lateinit var pointsWithinRadius: List<LatLng>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,29 +41,34 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
 
     override fun onMapReady(googleMap: GoogleMap) {
-        val target = LatLng(12.9788, 77.5997)
-
+        val lat : Double = 15.6
+        val long : Double = 75.8
+        val target = LatLng(lat,long)
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(target, 10f))
 
-        // Draw circle overlay
-        val center = LatLng(12.9788, 77.5997)
+        val filePath = "final.csv"
+
+        val allPoints = readCsvAndConvertToList(this, filePath)
+        pointsWithinRadius = arialProbab(lat, long, 0.01, allPoints)
+
+        val color = getTheColor(pointsWithinRadius.size)
+        val t = hexToRgb(color)
+
+        val center = LatLng(lat, long)
         val radius = 5000.0 // in meters
         val circleOptions = CircleOptions()
             .center(center)
             .radius(radius)
             .strokeWidth(2f)
-            .strokeColor(Color.RED)
-            .fillColor(Color.argb(70, 255, 0, 0)) // transparent red
+            .strokeColor(Color.parseColor(color))
+            .fillColor(Color.argb(70, t!!.first, t.second, t.third))// transparent
         googleMap.addCircle(circleOptions)
 
-        binding.cardShowAccident.setOnClickListener { showPoints(googleMap) }
-
+        binding.cardShowAccident.setOnClickListener { showPoints(googleMap, pointsWithinRadius) }
     }
 
-    private fun showPoints(googleMap: GoogleMap) {
+    private fun showPoints(googleMap: GoogleMap, pointsWithinRadius: List<LatLng>) {
         mMap = googleMap
-
-        val filePath = "final.csv"
 
         val progressBar = ProgressDialog(this).apply {
             setMessage("Please wait...")
@@ -73,8 +78,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         progressBar.show()
 
         Thread {
-            val allPoints = readCsvAndConvertToList(this, filePath)
-            val pointsWithinRadius = arialProbab(12.9788, 77.5997, 0.01, allPoints)
 
             runOnUiThread {
                 for (dataPoint in pointsWithinRadius) {
@@ -122,5 +125,41 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         return points
     }
+
+    fun getTheColor(value: Int): String {
+        if (value <= 3) {
+            val intensity = Integer.toHexString((255 * value / 3)).padStart(2, '0')
+            return "#$intensity" + "0000"
+        } else {
+            return "#ff0000"
+        }
+    }
+
+
+    fun hexToRgb(hex: String): Triple<Int, Int, Int>? {
+        var colorHex = hex.trim()
+        // Remove the '#' prefix if present
+        if (colorHex.startsWith("#")) {
+            colorHex = colorHex.substring(1)
+        }
+
+        // Ensure the hex code has a valid length
+        if (colorHex.length != 6) {
+            return null
+        }
+
+        try {
+            // Parse the hex string to RGB values
+            val red = Integer.parseInt(colorHex.substring(0, 2), 16)
+            val green = Integer.parseInt(colorHex.substring(2, 4), 16)
+            val blue = Integer.parseInt(colorHex.substring(4, 6), 16)
+            return Triple(red, green, blue)
+        } catch (e: NumberFormatException) {
+            // Handle invalid hex color format
+            return null
+        }
+    }
+
+
 
 }
