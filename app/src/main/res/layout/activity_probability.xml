@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".probability.ProbabilityActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinner_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:background="@drawable/query_background"
+            android:gravity="center"
+            tools:listitem="@android:layout/simple_list_item_1" />
+
+        <Spinner
+            android:id="@+id/spinner_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:background="@drawable/query_background"
+            android:gravity="center"
+            tools:listitem="@android:layout/simple_list_item_1" />
+
+        <Spinner
+            android:id="@+id/spinner_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:background="@drawable/query_background"
+            android:gravity="center"
+            tools:listitem="@android:layout/simple_list_item_1" />
+
+        <Spinner
+            android:id="@+id/spinner_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:background="@drawable/query_background"
+            android:gravity="center"
+            tools:listitem="@android:layout/simple_list_item_1" />
+
+        <Spinner
+            android:id="@+id/spinner_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:background="@drawable/query_background"
+            android:gravity="center"
+            tools:listitem="@android:layout/simple_list_item_1" />
+
+        <Spinner
+            android:id="@+id/spinner_six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:background="@drawable/query_background"
+            android:gravity="center"
+            tools:listitem="@android:layout/simple_list_item_1" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="24dp"
+            android:backgroundTint="@color/background_blue"
+            android:text="@string/submit"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/probability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="24dp"
+            android:textColor="@color/background_blue"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="@string/probability_is" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="24dp"
+            android:textColor="@color/background_blue"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:text="0.90%" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Yatra Suraksha</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="map_api_key">AIzaSyAY8rLdqcv7A7FkqcxjDEnnOnXPFRDH8DI</string>
+    <string name="welcome_to_the_chat_bot">Welcome to the chat bot</string>
+    <string name="write_here">write here...</string>
+    <string name="map">MAP</string>
+    <string name="show_report">Show Report</string>
+    <string name="probability">Probability</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="personal">Personal</string>
+    <string name="details">Details</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="emergency_contact">Emergency Contact</string>
+    <string name="add">ADD</string>
+    <string name="submit">SUBMIT</string>
+    <string name="probability_is">Probability is 👇</string>
+    <string name="analysis_report">Analysis Report 👇</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_register">Don\'t have an account? Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_button">LOGIN</string>
+    <string name="create_new">Create new</string>
+    <string name="account">Account</string>
+    <string name="already_registered_login">Already Registered? Login</string>
+</resources>

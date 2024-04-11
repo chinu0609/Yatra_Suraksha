@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "826946923549",
+    "project_id": "yatra-suraksha-920a3",
+    "storage_bucket": "yatra-suraksha-920a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826946923549:android:a2b32133ffa51b11886af4",
+        "android_client_info": {
+          "package_name": "com.gb.yatrasuraksha"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCafBeZbfK1-m38hnEt4aShaUhQOWYpO7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
