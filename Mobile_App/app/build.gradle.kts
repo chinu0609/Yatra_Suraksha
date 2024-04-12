@@ -51,6 +51,7 @@ dependencies {
     implementation ("com.github.skydoves:powerspinner:1.2.7")
     implementation("com.google.ai.client.generativeai:generativeai:0.2.2")
     implementation("org.apache.commons:commons-csv:1.8")
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

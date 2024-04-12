@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
+import androidx.lifecycle.ReportFragment.Companion.reportFragment
 import com.gb.yatrasuraksha.chatbot.ChatBotActivity
 import com.gb.yatrasuraksha.databinding.ActivityMainBinding
 import com.gb.yatrasuraksha.googlemaps.MapsActivity
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //change color of status bar
-        window.statusBarColor = resources.getColor(R.color.white, theme)
+        window.statusBarColor = resources.getColor(R.color.bg, theme)
 
         //on clicking sign out button
         binding.signOut.setOnClickListener {
@@ -32,23 +33,23 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
 
-        // Custom animation speed or duration.
-        val animator = ValueAnimator.ofFloat(0f, 1f)
-        animator.addUpdateListener { animation ->
-            binding.animationView.progress = animation.animatedValue as Float
-        }
-        animator.start()
+//        // Custom animation speed or duration.
+//        val animator = ValueAnimator.ofFloat(0f, 1f)
+//        animator.addUpdateListener { animation ->
+//            binding.animationView.progress = animation.animatedValue as Float
+//        }
+//        animator.start()
 
         //on clicking map button
-        binding.map.setOnClickListener { startActivity(Intent(this, MapsActivity::class.java)) }
+        binding.cardMaps.setOnClickListener { startActivity(Intent(this, MapsActivity::class.java)) }
 
         //by clicking on chatbot
-        binding.animationView.setOnClickListener { startActivity(Intent(this, ChatBotActivity::class.java)) }
+        binding.typeHere.setOnClickListener { startActivity(Intent(this, ChatBotActivity::class.java)) }
 
         //by clicking on show report
-        binding.showReport.setOnClickListener { startActivity(Intent(this, ShowPdfActivity::class.java)) }
+        binding.cardAccidentReport.setOnClickListener { startActivity(Intent(this, ShowPdfActivity::class.java)) }
 
         //by clicking on probability
-        binding.probability.setOnClickListener { startActivity(Intent(this, ProbabilityActivity::class.java)) }
+        binding.cardProbability.setOnClickListener { startActivity(Intent(this, ProbabilityActivity::class.java)) }
     }
 }

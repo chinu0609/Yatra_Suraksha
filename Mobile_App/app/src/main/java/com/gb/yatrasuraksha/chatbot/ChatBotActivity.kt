@@ -46,7 +46,7 @@ class ChatBotActivity : AppCompatActivity() {
         )
 
         //change color of status bar
-        window.statusBarColor = resources.getColor(R.color.white, theme)
+        window.statusBarColor = resources.getColor(R.color.bg, theme)
 
         //on clicking to send button
         binding.sendButton.setOnClickListener {
