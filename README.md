@@ -11,37 +11,24 @@ This Project is the solution for Accident Data Analysis Problem Statement for Ka
 
 We have created a mobile app which basically has three features
 
-    1) Black Spot or Intensity of accident
-    around current or given location in 
-    the radius of 5Km.
+    1) Black Spot or Intensity of accident around current or given location in the radius of 5Km.
 
-    2) Probability estimation based on 
-    various categorical features that user
-    will provide and get a rough
-    probability of accident occurence.
+    2) Probability estimation based on various categorical features that user will provide and get a rough probability of accident occurence.
 
-    3) We have done Accident Data Aanalysis
-    and the conclusions that we have drawn
-    are all mentioned in the report.
+    3) We have done Accident Data Aanalysis and the conclusions that we have drawn are all mentioned in the report.
 
 ## Directory Structure
 
 Mobile_App:
     
-    This directory consists of all the app
-    related files.
+    This directory consists of all the app related files.
 
 Chatbot_Model:
     
-    This directory consists of the Language
-    model code for the chatbot which is
-    trained on accident related data, which 
-    suggests improvements. This model is 
-    ready but due hosting cost we have used 
-    gemini API for presentation purpose.
+    This directory consists of the Language model code for the chatbot which is trained on accident related data, which suggests improvements. This model is 
+    ready but due hosting cost we have used gemini API for presentation purpose.
 
 Analysis_Report:
 
-    This directory consists of all the 
-    Power-BI files and PDF report.
+    This directory consists of all the Power-BI files and PDF report.
 
