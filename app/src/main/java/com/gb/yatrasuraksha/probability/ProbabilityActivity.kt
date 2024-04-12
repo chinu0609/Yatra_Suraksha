@@ -2,6 +2,7 @@ package com.gb.yatrasuraksha.probability
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.view.View
 import android.widget.AdapterView
@@ -9,6 +10,7 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.gb.yatrasuraksha.R
 import com.gb.yatrasuraksha.databinding.ActivityProbabilityBinding
+import kotlin.math.roundToInt
 
 class ProbabilityActivity : AppCompatActivity() {
 
@@ -53,16 +55,50 @@ class ProbabilityActivity : AppCompatActivity() {
         //do numeric calculations
         doNumericCalculation(listOfMaps)
 
-        binding.probability.visibility = View.GONE
+        binding.progressBarProbability.visibility = View.GONE
+        binding.progressText.visibility = View.GONE
         //on clicking submit
         binding.submit.setOnClickListener {
-            binding.probability.visibility = View.VISIBLE
+            binding.progressBarProbability.visibility = View.VISIBLE
+            binding.progressText.visibility = View.VISIBLE
             val result = v1 * v2 * v3 * v4 * v5 * v6 * 10 * 100
             val formattedResult = String.format("%.8f", result)
-            binding.result.text = "$formattedResult%"
+
+            val mappedValue = mapToRange(result, 0.0, 50.0, 0.0, 100.0)
+
+            var sValue = ""
+            var cnt = 0
+            for(i in mappedValue.toString()) {
+                if(cnt == 4) break
+                sValue += i
+                cnt++
+            }
+
+            val mV = sValue.toDouble()
+
+            Log.d("Gaurav", "$mappedValue , $sValue , ${mV.toInt()}")
+
+            binding.progressText.text = "$mV%"
+            binding.progressBarProbability.progress = mV.toInt()
         }
     }
 
+    fun mapToRange(number: Double, minInput: Double, maxInput: Double, minOutput: Double, maxOutput: Double): Double {
+        // Ensure the input number is within the specified range
+        val clampedNumber = when {
+            number < minInput -> minInput
+            number > maxInput -> maxInput
+            else -> number
+        }
+
+        // Calculate the ratio of the input number within the input range
+        val ratio = (clampedNumber - minInput) / (maxInput - minInput)
+
+        // Map the ratio to the output range
+        val mappedValue = ratio * (maxOutput - minOutput) + minOutput
+
+        return mappedValue
+    }
 
     private fun addValuesIntoSpinner(listOfMaps: List<Map<String, Double>>) {
         //road type

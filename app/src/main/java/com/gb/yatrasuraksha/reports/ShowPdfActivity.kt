@@ -16,8 +16,8 @@ class ShowPdfActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //change color of status bar
-        window.statusBarColor = resources.getColor(R.color.white, theme)
+        window.statusBarColor = resources.getColor(R.color.bg, theme)
 
-        binding.pdfView.fromAsset("analysis1.pdf").load()
+        binding.pdfView.fromAsset("analysis2.pdf").load()
     }
 }

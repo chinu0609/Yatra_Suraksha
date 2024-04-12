@@ -9,7 +9,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="lavender">#8692F7</color>
     <color name="background_blue">#3854FF</color>
+    <color name="background_blue1">#0749CC</color>
     <color name="colorPrimary">#536DFE</color>
     <color name="colorPrimaryDark">#536DFE</color>
     <color name="colorAccent">#F44336</color>
+    <color name="bg">#1E2027</color>
 </resources>

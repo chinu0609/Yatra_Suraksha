@@ -15,8 +15,8 @@
     <string name="emergency_contact">Emergency Contact</string>
     <string name="add">ADD</string>
     <string name="submit">SUBMIT</string>
-    <string name="probability_is">Probability is 👇</string>
-    <string name="analysis_report">Analysis Report 👇</string>
+    <string name="probability_is">Probability is</string>
+    <string name="analysis_report">Analysis Report</string>
     <string name="login">Login</string>
     <string name="don_t_have_an_account_register">Don\'t have an account? Register</string>
     <string name="email">Email</string>
