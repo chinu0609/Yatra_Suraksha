@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">यात्रा सुरक्षा</string>
+    <string name="welcome_to_the_chat_bot">चैट बॉट में आपका स्वागत है</string>
+    <string name="write_here">यहां लिखें...</string>
+    <string name="map_api_key">AIzaSyAY8rLdqcv7A7FkqcxjDEnnOnXPFRDH8DI</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="map">नक्शा</string>
+    <string name="show_report">रिपोर्ट दिखाएं</string>
+    <string name="probability">संभावना</string>
+    <string name="sign_out">साइन आउट करें</string>
+    <string name="personal">व्यक्तिगत</string>
+    <string name="details">विवरण</string>
+    <string name="name">नाम</string>
+    <string name="phone_number">फोन नंबर</string>
+    <string name="emergency_contact">आपातकालीन संपर्क</string>
+    <string name="add">जोड़ें</string>
+    <string name="submit">जमा करें</string>
+    <string name="probability_is">संभावना 👇</string>
+    <string name="analysis_report">विश्लेषण रिपोर्ट</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="don_t_have_an_account_register">कोई खाता नहीं है? रजिस्टर करें</string>
+    <string name="email">ईमेल</string>
+    <string name="password">पासवर्ड</string>
+    <string name="login_button">लॉग इन करें</string>
+    <string name="create_new">नया बनाएं</string>
+    <string name="account">खाता</string>
+    <string name="already_registered_login">पहले से रजिस्टर हैं? लॉग इन करें</string>
+</resources>

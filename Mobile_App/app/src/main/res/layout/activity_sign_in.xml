@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".login_signup.SignInActivity">
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/login"
+        android:textColor="@color/background_blue"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_have_an_account_register"
+        android:textColor="@color/background_blue"
+        android:textSize="15sp"
+        android:layout_margin="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_text" />
+
+    <EditText
+        android:id="@+id/signin_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="8dp"
+        android:hint="@string/email"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/register" />
+
+    <EditText
+        android:id="@+id/signin_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="8dp"
+        android:hint="@string/password"
+        android:padding="8dp"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/signin_email" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/background_blue"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/login_button"
+        android:textSize="25sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/signin_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

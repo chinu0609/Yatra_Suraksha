@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ಯಾತ್ರಾ ಸುರಕ್ಷಾ</string>
+    <string name="title_activity_maps">ನಕ್ಷೆ ಕ್ರಿಯೆ</string>
+    <string name="map_api_key">AIzaSyAY8rLdqcv7A7FkqcxjDEnnOnXPFRDH8DI</string>
+    <string name="welcome_to_the_chat_bot">ಚಾಟ್ ಬಾಟ್‌ಗೆ ಸ್ವಾಗತ</string>
+    <string name="write_here">ಇಲ್ಲಿ ಬರೆಯಿರಿ...</string>
+    <string name="map">ನಕ್ಷೆ</string>
+    <string name="show_report">ವರದಿ ತೋರಿಸು</string>
+    <string name="probability">ಸಂಭಾವನೆ</string>
+    <string name="sign_out">ಸೈನ್ ಔಟ್</string>
+    <string name="personal">ವೈಯಕ್ತಿಕ</string>
+    <string name="details">ವಿವರಗಳು</string>
+    <string name="name">ಹೆಸರು</string>
+    <string name="phone_number">ಫೋನ್ ಸಂಖ್ಯೆ</string>
+    <string name="emergency_contact">ತಾತ್ಕಾಲಿಕ ಸಂಪರ್ಕ</string>
+    <string name="add">ಸೇರಿಸಿ</string>
+    <string name="submit">ಸಲ್ಲಿಸು</string>
+    <string name="probability_is">ಸಂಭಾವನೆ ಇದೆ 👇</string>
+    <string name="analysis_report">ವಿಶ್ಲೇಷಣ ವರದಿ 👇</string>
+    <string name="login">ಲಾಗಿನ್</string>
+    <string name="don_t_have_an_account_register">ಖಾತೆ ಇಲ್ಲವಾ? ನೋಂದಣಿ ಮಾಡಿ</string>
+    <string name="email">ಇಮೇಲ್</string>
+    <string name="password">ಪಾಸ್‌ವರ್ಡ್</string>
+    <string name="login_button">ಲಾಗಿನ್</string>
+    <string name="create_new">ಹೊಸದಾಗಿ ರಚಿಸಿ</string>
+    <string name="account">ಖಾತೆ</string>
+    <string name="already_registered_login">ಈಗಾಗಲೇ ನೋಂದಣಿಯಾಗಿದೆ? ಲಾಗಿನ್ ಮಾಡಿ</string>
+</resources>
