@@ -41,8 +41,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
 
     override fun onMapReady(googleMap: GoogleMap) {
-        val lat : Double = 15.6
-        val long : Double = 75.8
+        val lat : Double = 13.1989
+        val long : Double = 77.7069
         val target = LatLng(lat,long)
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(target, 10f))
 
