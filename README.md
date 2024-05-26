@@ -6,7 +6,8 @@ Team Members
     1) Shreya Awasekar.
     2) Lavanya Satpute.
     3) Gaurav Bodake.
-    4) Chinmay Hemant Bhosale.
+    4) Swapnil Chaudhary.
+    5) Chinmay Hemant Bhosale.
 
 This Project is the solution for Accident Data Analysis Problem Statement for Karnatkak State Police Hackathon.
 
